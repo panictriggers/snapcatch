@@ -3,4 +3,4 @@ Inspired by [snaprecovery](https://github.com/sdushantha/snaprecovery). We wante
 
 The script is really simple but allows to capture "disappeared" snaps from Snapchat.
 
-**Requires root priveledges!!**
+**Requires a rooted device!**

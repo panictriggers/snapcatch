@@ -1,6 +1,6 @@
 <h1 align="center">snapcatch</h1>
 <p align="center">
-Save Snaps without letting recipients know. </br>Recover old Snaps that have “disappeared” from Snapchat
+Save Snaps without letting others know. </br>Recover old Snaps that have “disappeared” from Snapchat
 </br>
 Inspired by <a href="https://github.com/sdushantha/snaprecovery">snaprecovery</a>
 </br>
@@ -25,6 +25,8 @@ Snaps that are sent to the user can also be opened/saved/viewed using the script
 
 # Usage
 The script takes, as of now, no arguments. It is recommended to run as root. Although the script can, if it has the proper permissions, run without root. 
+
+The script will create a folder in the location it's run at (`./snapexport_yyyymmddMMSS`), resolve the type of Snap automagically, and copies them to that folder.
 
 Since most Android ROMs mount their `sdcard` and `emulated` storages as `no-exec`, you can't use `./snapcatch.sh`.
 

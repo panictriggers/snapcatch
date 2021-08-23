@@ -1,7 +1,7 @@
 #!/bin/bash
 ##please note this is a work in progress bash file, not a final product!
 
-echo "Snapcatch v0.2"
+echo "Snapcatch v0.3"
 
 
 # variables
@@ -33,11 +33,27 @@ else
 	echo "yes"
 fi
 
+echo -n "Checking if there are snaps to catch..."
+
+if ls -1qA $TEMP_DIR | grep -q . 
+then ! echo yes
+else 
+	echo no
+	echo "Snapchat dir is empty...exiting"
+	exit 0
+fi
 
 echo -n "Creating new directory..."
 # create the destiny path for the "lost" images 
 mkdir -p $DIR_NAME
-echo "ok"
+
+if [ $? -ne 0 ]; then
+	echo "failed"
+	echo "Could not create a new directory"
+	exit 1
+else
+	echo "ok"
+fi
 
 echo -n "Catching snaps..."
 # get list of all files, as wel as their mime-type STILL NEEDS THE PATH ADDED
@@ -54,15 +70,17 @@ for FILE in $TEMP_DIR/*; do
 	cp "$FILE" "${DIR_NAME}/${FILENAME}"
 done
 
-echo "ok"
+
 # copy all contents
 #cp -a  $TEMP_DIR $DIR_NAME
 #ls -a $TEMP_DIR
 
 if [ $? -ne 0 ]; then
-	echo "Export failed!"
+	echo "failed"
+	echo "FAILED: Error while copying."
 	exit 1
 else
-	echo "Export succeeded!"
+	echo "ok"
+	echo "SUCCESS!"
 	exit
 fi

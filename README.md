@@ -18,7 +18,7 @@ Tested on LineageOS 17.1 (Android 10, rooted with Magisk) with Snapchat 11.41.1.
 # How it works
 When you receive a Snap, the content is saved in a temporary folder so the content can be viewed by the user. If your phone is rooted, or if you have given yourself access to this folder, you can simply copy the snaps over to another location and store them there. 
 
-Snaps that were 'deleted' will stay in the temporary folder until the app terminates or during logout, and can thus be recovered using this method. Snaps not wiped, so you could, with proper forensic tools, recover 'deleted' snaps that way too.
+Snaps that were 'deleted' will stay in the temporary folder until the app terminates or during logout, and can thus be recovered using this method. Snaps are not wiped, so you could, with proper forensic tools, recover 'deleted' snaps that way too.
 
 Snaps that are sent to the user can also be opened/saved/viewed using the script without the knowlegde of the author, even if the snap was time limited, circumventing some of Snapchat's main privacy and security features.
 

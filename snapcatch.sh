@@ -1,8 +1,7 @@
 #!/bin/bash
-##please note this is a work in progress bash file, not a final product!
 
 echo "Snapcatch v0.3"
-
+echo "(c) PanicTriggers 2021"
 
 # variables
 TEMP_DIR="/data/user/0/com.snapchat.android/files/file_manager/chat_snap"

@@ -10,7 +10,7 @@ Inspired by <a href="https://github.com/sdushantha/snaprecovery">snaprecovery</a
 # Dependencies
 This script is built for rooted Android devices, but requires no further dependencies or enabled features.
 
-Tested on LineageOS 17.1 (Android 10, rooted with Magisk) with Snapchat 11.41.1.39. 
+Tested on LineageOS 17.1 (Android 10, rooted with Magisk) with Snapchat 11.56.1.35
 
 # Why
 [Snaprecovery](https://github.com/sdushantha/snaprecovery/) uses `adb` to recover snaps. We found this not to be practical, so we made a script that you can quickly run locally on your phone. 
@@ -31,3 +31,6 @@ The script will create a folder in the location it's run at (`./snapexport_yyyym
 Since most Android ROMs mount their `sdcard` and `emulated` storages as `no-exec`, you can't use `./snapcatch.sh`.
 
 However, you can run the script by launching a new shell: `sh snapcatch.sh`
+
+## Little sidenote
+The attack works best when you just opened the app and downloaded everything
